@@ -1,0 +1,32 @@
+{
+    "name": "pawelmysior/laravel-freshmail",
+    "description": "FreshMail REST API wrapper for Laravel",
+    "keywords": ["laravel", "freshmail"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pawel Mysior",
+            "email": "pawelmysior@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "5.5.*",
+        "kitetail/zttp": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PawelMysior\\FreshMail\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PawelMysior\\FreshMail\\FreshMailServiceProvider"
+            ],
+            "aliases":{
+                "FreshMail": "PawelMysior\\FreshMail\\FreshMailFacade"
+            }
+        }
+    }
+}
