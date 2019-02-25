@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "illuminate/support": "5.5.*",
+        "illuminate/support": "^5.5",
         "kitetail/zttp": "^0.3.0"
     },
     "autoload": {
